@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+; Will continue to update this or posibbly remove it in future versions by replacing it
+; Disable Windows Defender Real-Time Protection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+; Disable Windows Defender Security Center
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Security Center]
+"DisableNotifications"=dword:00000001
+
+; Disable Tamper Protection (optional, requires restart to take effect)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features]
+"TamperProtection"=dword:00000000
